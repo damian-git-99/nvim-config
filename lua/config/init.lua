@@ -1,3 +1,7 @@
+require('config.globals')
+require('config.options')
+require('config.keymaps')
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -14,9 +18,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-
-require('config.globals')
-require('config.options')
 
 local opts = {
 	defaults = {
