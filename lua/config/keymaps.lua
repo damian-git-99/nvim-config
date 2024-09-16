@@ -2,6 +2,8 @@ local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
@@ -15,7 +17,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab)
 
 -- Moverse entre ventanas
-kymap.set("n", "<C-h>", "<C-w>h", { desc = "Moverse a la ventana izquierda" }) -- Ventana izquierda
+keymap.set("n", "<C-h>", "<C-w>h", { desc = "Moverse a la ventana izquierda" }) -- Ventana izquierda
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Moverse a la ventana inferior" }) -- Ventana abajo
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Moverse a la ventana superior" }) -- Ventana arriba
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Moverse a la ventana derecha" }) -- Ventana derecha
