@@ -23,9 +23,6 @@ local opts = {
 	defaults = {
 		lazy = true,
 	},
-	install = {
-		colorscheme = { "nightfox" },
-	},
 	rtp = {
 		disabled_plugins = {
 			"gzip",
@@ -38,10 +35,7 @@ local opts = {
 			"tutor",
 			"zipPlugin",
 		},
-	},
-	change_detection = {
-		notify = true,
-	},
+	}
 }
 
 require("lazy").setup('plugins', opts)
