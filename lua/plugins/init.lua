@@ -1,4 +1,4 @@
 return {
-        { "folke/neoconf.nvim", cmd = "Neoconf" },
-        "folke/neodev.nvim",
+        { "folke/neoconf.nvim", cmd = "Neoconf", lazy = false },
+        {"folke/neodev.nvim", lazy = false  },
 }
