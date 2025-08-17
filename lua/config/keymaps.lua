@@ -21,3 +21,7 @@ keymap.set("n", "<C-h>", "<C-w>h", { desc = "Moverse a la ventana izquierda" }) 
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Moverse a la ventana inferior" }) -- Ventana abajo
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Moverse a la ventana superior" }) -- Ventana arriba
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Moverse a la ventana derecha" }) -- Ventana derecha
+
+-- Map <leader>w to save the current file
+keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
+
